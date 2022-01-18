@@ -17,10 +17,11 @@ function App() {
   const [filterArr, setFilterArr] = useState([]);
   const [isLiked, setIsLiked] = useState(false);
   const [isDisliked, setIsDisliked] = useState(false);
-  const [toggleValue, setToggleValue] = useState("");
   const totalPageCount = Math.ceil(totalMovie / pageSize);
   const firstPageIndex = (currentPage - 1) * pageSize;
   const lastPageIndex = firstPageIndex + pageSize;
+
+  const toggleValue = "";
 
   // filter movies by category
   const dataCategory = [];
